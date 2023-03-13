@@ -1,0 +1,13 @@
+<launch>
+    <param name="kp" type="float" value=".3">
+    <param name="ki" type="float" value=".4">
+    <param name="kd" type="float" value=".2">
+    <param name="ks" type="float" value="0">
+    <param name="k" type="float" value=".001">
+    <param name="topic1" type="string" value="dist_topic">
+
+    <param name="lateral_control_type" type="string" value="stanley">
+
+    
+    <node pkg="controller" type="control_node.py" name="control_node"></node>
+</launch>
